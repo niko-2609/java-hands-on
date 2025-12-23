@@ -1,7 +1,12 @@
 package com.example.test.game;
 
 import com.example.test.game.GamingConsole;
+import org.springframework.stereotype.Component;
+import org.springframework.beans.factory.annotation.Qualifier;
 
+
+@Component()
+@Qualifier("mario")
 public class MarioGame implements GamingConsole {
 
     public void up() {
